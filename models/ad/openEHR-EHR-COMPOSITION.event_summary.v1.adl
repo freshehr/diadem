@@ -1,0 +1,78 @@
+archetype (adl_version=1.4; uid=302d6cea-5f78-306a-8b22-2f182057bdef)
+	openEHR-EHR-COMPOSITION.event_summary.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2012-01-31">
+		["name"] = <"Sistine Barretto-Daniels">
+		["organisation"] = <"Ocean Informatics Pty Ltd">
+		["email"] = <"Sistine.Barretto-Daniels@oceaninformatics.com">
+	>
+	lifecycle_state = <"OrganisationDraft">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record a summary of a single, significant healthcare event, with the intent of being made available to multiple providers within a shared health record environment, such as the Australia's National eHealth Record (or PCEHR).">
+			keywords = <"event","encounter","episode">
+			copyright = <"© openEHR Foundation">
+			use = <"Use to record a summary of a single, significant healthcare event or episode of care for viewing or exchange within a shared health record environment.">
+			misuse = <"Not to be used to record the complete and contemporaneous details of a healthcare event, encounter or episode of care within a care provider's health record. Use COMPOSITION.encounter (and specialisations) for this purpose.">
+		>
+	>
+	other_details = <
+		["references"] = <"NEHTA Event Summary Structure Document Template Specification v1.1">
+		["MD5-CAM-1.0.1"] = <"BFD107D44AFC54265031B83A05B521A8">
+		["build_uid"] = <"7440ff84-bcf0-3fd3-b270-20cfb630783d">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- Event Summary
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT matches {
+				other_context matches {
+					ITEM_TREE[at0001] matches {    -- Tree
+						items cardinality matches {0..*; unordered} matches {
+							allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- Extension
+								include
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Event Summary">
+					description = <"Summary record of a single, significant healthcare event, encounter or episode.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <" For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
+				>
+			>
+		>
+	>
