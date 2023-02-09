@@ -1,0 +1,166 @@
+archetype (adl_version=1.4; uid=5e5d86d5-88c3-31d3-acea-816e87affe65)
+	openEHR-EHR-OBSERVATION.avpu.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"Lars Bitsch-Larsen">
+				["organisation"] = <"Haukeland University Hospital, Bergen Norway">
+			>
+			accreditation = <"MD DEAA, specialist in anesthesiia and intensive care, tropical medicine & MBA.">
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2013-02-07">
+		["name"] = <"Heather Leslie">
+		["organisation"] = <"Ocean Informatics">
+		["email"] = <"heather.leslie@oceaninformatics.com">
+	>
+	lifecycle_state = <"CommitteeDraft">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Anvendes til registrering av pasientens reaksjon, med henblikk på bevissthet.">
+			keywords = <"Avpu","vaken","tale","smerter","ikke reagerende">
+			copyright = <"© openEHR Foundation">
+			use = <"Anvendes til vurdering av pasientens respons, som uttrykk for bevissthetsnivå.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record a patient's responsiveness, as an indication of their level of consciousness.">
+			keywords = <"avpu","alert","voice","pain","unresponsive">
+			copyright = <"© openEHR Foundation">
+			use = <"Use to record as part of a screening assessment of a patient's responsiveness, as an indication of their level of consciousness.">
+		>
+	>
+	other_details = <
+		["references"] = <"AVPU, draft archetype, NEHTA Clinical Knowledge Manager [Internet]. NEHTA. Authored: 07 Feb 2013. Available at: http://dcm.nehta.org.au/ckm/#showArchetype_1013.1.1173_1 (accessed 2 June 2013).
+Kelly, CA; Upex A; Bateman DN. (February 2005). \"Comparison of consciousness level assessment in the poisoned patient using the alert/verbal/painful/unresponsive scale and the Glasgow Coma Scale\". Annals of Emergency Medicine 45 (2).
+http://en.wikipedia.org/wiki/AVPU">
+		["current_contact"] = <"Heather Leslie, Ocean Informatics, heather.leslie@oceaninformatics.com">
+		["MD5-CAM-1.0.1"] = <"7D29AF41BBBDF780ED69196133B7DA52">
+		["build_uid"] = <"404e58bc-6fb1-3d82-97fc-baa20a60dabd">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- AVPU
+		data matches {
+			HISTORY[at0001] matches {    -- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- AVPU Observation
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0005,    -- Alert
+													at0006,    -- Voice
+													at0007,    -- Pain
+													at0008]    -- Unresponsive
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"AVPU">
+					description = <"Simple scale used as part of an assessment to measure and record a patient's responsiveness, indicating their level of consciousness. AVPU is an acronym for 'Alert', 'Voice', 'Pain', 'Unresponsive'.">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"AVPU Observation">
+					description = <"The observation of the patient's responsiveness.">
+				>
+				["at0005"] = <
+					text = <"Alert">
+					description = <"The patient is fully awake and alert.">
+				>
+				["at0006"] = <
+					text = <"Voice">
+					description = <"The patient responds in any way to a voice stimulus.">
+				>
+				["at0007"] = <
+					text = <"Pain">
+					description = <"The patient responds in any way to a pain stimulus.">
+				>
+				["at0008"] = <
+					text = <"Unresponsive">
+					description = <"The patient does not respond in any way to voice or pain stimuli.">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"AVPU">
+					description = <"En enkel skala anvendt til at vurdere og registrere en pasients reaksjon som mål for bevissthetsnivå. AVPU er en forkortelse for \"Alert\" (vaken), \"Voice\" (tale), \"Pain\" (smerte), \"unresponsive\" (ikke reagerende).">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Enhver hendelse">
+					description = <"Standard, uspesifisert tidspunkt eller intervall som kan defineres i en mal eller i et forløp.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"AVPU observasjon">
+					description = <"Observasjon av pasientens reaksjoner.">
+				>
+				["at0005"] = <
+					text = <"Vaken">
+					description = <"Pasienten er vaken.">
+				>
+				["at0006"] = <
+					text = <"Tale">
+					description = <"Pasienten reagerer på et eller annet vis på tiltale.">
+				>
+				["at0007"] = <
+					text = <"Smerter">
+					description = <"Pasienten reagerer på et eller annet vis på tsmerter.">
+				>
+				["at0008"] = <
+					text = <"Ikke reagerende">
+					description = <"Pasienten reagerer ikke på tale eller smerte stimuli.">
+				>
+			>
+		>
+	>
