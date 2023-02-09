@@ -1,0 +1,644 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "3d9891a8-eb77-46aa-ae09-f5c499466725",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : { },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "Initial"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "MetaDataSet:Sample Set " : "Template metadata sample set ",
+      "Acknowledgements" : "",
+      "Business Process Level" : "",
+      "Care setting" : "",
+      "Client group" : "",
+      "Clinical Record Element" : "",
+      "Copyright" : "",
+      "Issues" : "",
+      "Owner" : "",
+      "Sign off" : "",
+      "Speciality" : "",
+      "User roles" : "",
+      "MD5-CAM-1.0.1" : "41cc18eb9b799ae00ae9095535a87985",
+      "PARENT:MD5-CAM-1.0.1" : "17B34210A4047512C96E82E23E71F19C"
+    },
+    "details" : {
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "purpose" : "",
+        "use" : "",
+        "misuse" : "",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      }
+    }
+  },
+  "annotations" : {
+    "@type" : "RESOURCE_ANNOTATIONS",
+    "documentation" : {
+      "en" : {
+        "" : {
+          "source" : "openEHR,FHIR"
+        },
+        "/data[at0001]/items[at0009]/items[at0010]" : {
+          "source" : "FHIR, openEHR,DAM"
+        },
+        "/data[at0001]/items[at0009]/items[at0032]" : {
+          "source" : "openEHR"
+        },
+        "/data[at0001]/items[at0009]/items[at0012]" : {
+          "source" : "FHIR, openEHR"
+        },
+        "/protocol[at0042]/items[at0047]" : {
+          "source" : "FHIR, openEHR, DAM"
+        },
+        "/data[at0001]/items[at0009]/items[at0028]" : {
+          "source" : "openEHR"
+        },
+        "/data[at0001]/items[at0009]/items[at0018]" : {
+          "source" : "openEHR"
+        },
+        "/data[at0001]/items[at0009]" : {
+          "source" : "openEHR,FHIR,DAM"
+        },
+        "/data[at0001]/items[at0002]" : {
+          "source" : "openEHR,FHIR,DAM"
+        },
+        "/data[at0001]/items[at0101]" : {
+          "source" : "DAM, openEHR"
+        },
+        "/data[at0001]/items[at0058]" : {
+          "source" : "FHIR, DAM"
+        },
+        "/data[at0001]/items[at0006]" : {
+          "source" : "openEHR"
+        },
+        "/data[at0001]/items[at0117]" : {
+          "source" : "IMH"
+        },
+        "/protocol[at0042]/items[at0099]/items[at0048]" : {
+          "source" : "openEHR"
+        },
+        "/data[at0001]/items[at0009]/items[at0041]" : {
+          "source" : "FHIR, openEHR"
+        },
+        "/data[at0001]/items[at0009]/items[at0011]" : {
+          "source" : "FHIR, openEHR,DAM"
+        },
+        "/data[at0001]/items[at0009]/items[at0021]" : {
+          "source" : "FHIR"
+        },
+        "/data[at0001]/items[at0009]/items[at0089]" : {
+          "source" : "DAM"
+        },
+        "/data[at0001]/items[at0009]/items[at0025]" : {
+          "source" : "openEHR"
+        },
+        "/data[at0001]/items[at0009]/items[at0027]" : {
+          "source" : "openEHR, FHIR, DAM"
+        },
+        "/data[at0001]/items[at0009]/items[at0029]" : {
+          "source" : "FHIR, openEHR"
+        },
+        "/data[at0001]/items[at0009]/items[at0106]" : {
+          "source" : "FHIR, DAM"
+        },
+        "/protocol[at0042]/items[at0062]" : {
+          "source" : "openEHR, FHIR, DAM"
+        },
+        "/protocol[at0042]/items[at0044]" : {
+          "source" : "openEHR"
+        },
+        "/protocol[at0042]/items[at0099]/items[at0045]" : {
+          "source" : "openEHR"
+        },
+        "/data[at0001]/items[at0009]/items[at0040]" : {
+          "source" : "openEHR"
+        },
+        "/data[at0001]/items[at0009]/items[at0020]" : {
+          "source" : "FHIR, openEHR,DAM"
+        },
+        "/data[at0001]/items[at0063]" : {
+          "source" : "FHIR, DAM"
+        }
+      },
+      "pt-br" : { },
+      "nb" : { }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-EVALUATION.adverse_reaction_risk.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-EVALUATION.t_adverse_reaction_risk.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "EVALUATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0002.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0101.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "CODE_PHRASE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "at0102", "at0103", "at0124" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0120.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "CODE_PHRASE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "at0121", "at0122", "at0123" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0117.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0058.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "CODE_PHRASE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "at0059", "at0060", "at0126" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0009",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0010.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0021.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0095", "at0023", "at0118" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0012.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0027.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0028.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0089.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0093", "at0092", "at0090" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0020.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0025.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0106.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0018.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0040.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0032.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0042",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0062.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0047.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0044.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..0",
+            "nodeId" : "at0099.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.1",
+          "text" : "CausativeAgent",
+          "description" : "Identification of a substance, or substance class, that is considered to put the individual at risk of an adverse reaction event.",
+          "comment" : "Both an individual substance and a substance class are valid entries in 'Substance'. If the value in 'Substance' is an individual substance, it may be duplicated in 'Specific substance'. It is strongly recommended that both 'Substance' and 'Specific substance' be coded with a terminology capable of triggering decision support, where possible. For example: Snomed CT, DM+D, RxNorm, NDFRT, ATC, New Zealand Universal List of Medicines and Australian Medicines Terminology. Free text entry should only be used if there is no appropriate terminology available.",
+          "source" : "openEHR,FHIR,DAM"
+        },
+        "at0120.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0120.1",
+          "text" : "AllergyType",
+          "description" : "Category of the identified 'Substance'.",
+          "comment" : "This data element has been included because it is currently being captured in some clinical systems. This data can be derived from the Substance where coding systems are used, and is effectively redundant in that situation."
+        },
+        "at0117.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0117.1",
+          "text" : "LastOccurence",
+          "description" : "The date and/or time of the onset of the last known occurrence of a reaction event.",
+          "comment" : "This date may be be a duplicate of the most recent 'Onset of reaction' date.\r\n Where a textual representation of the date of last occurrence is required e.g 'In Childhood, '10 years ago' the Comment element should be used.",
+          "source" : "IMH"
+        },
+        "at0027.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027.1",
+          "text" : "OnsetDate",
+          "description" : "Record of the date and/or time of the onset of the reaction.",
+          "source" : "openEHR, FHIR, DAM"
+        },
+        "at0062.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0062.1",
+          "text" : "RecordedDate",
+          "description" : "Date when the propensity or the reaction event was updated.",
+          "comment" : "Note: maps to recordedDate in FHIR.",
+          "source" : "openEHR, FHIR, DAM"
+        }
+      },
+      "pt-br" : {
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.1",
+          "text" : "CausativeAgent",
+          "description" : "A identificação de uma substância , ou classe de substâncias , que é considerada para colocar o indivíduo em risco de um evento de reação adversa.",
+          "comment" : "Tanto uma substância individual e uma classe de substância são entradas válidas na sua essência. Se o valor em \"Substância\" é uma substância individual, ele pode ser duplicado em substância específica. É altamente recomendável que tanto a substância e a substância específica sejam codificados com uma terminologia capaz de desencadear o apoio à decisão, sempre que possível. Por exemplo: Snomed CT, DMD, Rx Norm, NDFRT, ATC, relação de medicamentos. Entrada de texto livre só deve ser utilizado se não há nenhuma terminologia adequada disponível."
+        },
+        "at0120.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0120.1",
+          "text" : "AllergyType",
+          "description" : "Categoria da substância identificada",
+          "comment" : "Este elemento de dados foi incluído porque atualmente está sendo capturado em alguns sistemas clínicos. Esses dados podem ser derivados da substância onde são utilizados sistemas de codificação e é efetivamente redundante nessa situação."
+        },
+        "at0117.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0117.1",
+          "text" : "LastOccurence",
+          "description" : "A data e/ou hora do início da última ocorrência de um evento de reação conhecida.",
+          "comment" : "Esta data pode ser em duplicidade com o \"Início mais recente\" da reação.\r\nOnde uma representação textual da data da última ocorrência é exigido por exemplo na infância, há 10 anos o elemento de comentário deve ser usado."
+        },
+        "at0027.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027.1",
+          "text" : "OnsetDate",
+          "description" : "Registro da data e/ou hora do início da reação."
+        },
+        "at0062.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0062.1",
+          "text" : "RecordedDate",
+          "description" : "Data quando a propensão ou o evento de reação foi atualizado.",
+          "comment" : "Nota: mapas para gravação dos dados em FHIR"
+        }
+      },
+      "nb" : {
+        "at0002.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.1",
+          "text" : "CausativeAgent",
+          "description" : "Den spesifikke substansen eller substansklassen som setter individet i faresonen for en reaksjonshendelse.",
+          "comment" : "Feltet tillater en registrering av enten en spesifikk substans eller en substansklasse. Om verdien som registreres i \"Substans\" er en spesifikk substans kan verdien dupliseres i \"Spesifikk substans\". Det anbefales sterkt at både \"Substans\" og \"Spesifikk substans\" kodes med en terminologi som kan utløse beslutningsstøtte, der det er mulig. For eksempel: FEST, ATC eller SNOMED CT. Fritekst bør bare brukes hvis en hensiktsmessig terminologi ikke er tilgjengelig."
+        },
+        "at0120.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0120.1",
+          "text" : "AllergyType",
+          "description" : "Kategorien til den identifiserte substansen.",
+          "comment" : "Dette dataelementet er inkludert fordi det brukes i enkelte kliniske systemer. Dataene kan avledes fra substansen dersom man bruker hierarkiske kodesystemer, og er i slike tilfeller overflødig."
+        },
+        "at0117.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0117.1",
+          "text" : "LastOccurence",
+          "description" : "Dato og/eller tid da den siste kjente reaksjonshendelsen startet.",
+          "comment" : "Denne datoen kan være en kopi av den nyligste instansen av elementet \"Reaksjonsdebut\".\r\nNår en tekstlig representasjon av datoen er påkrevd, f.eks. \"i barndommen\" eller \"for 10 år siden\" skal elementet \"Kommentar\" brukes."
+        },
+        "at0027.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027.1",
+          "text" : "OnsetDate",
+          "description" : "Registrering av dato og tidspunkt for når reaksjonen startet."
+        },
+        "at0062.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0062.1",
+          "text" : "RecordedDate",
+          "description" : "Dato da tendensen eller reaksjonshendelsen ble oppdatert.",
+          "comment" : "Mappes til \"recordedDate\" i FHIR."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "47c7dee3-64f2-3ca9-87c2-0ab84c86913a",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Adverse reaction risk",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : {
+      "lbla@helse-bergen.no" : "lbla@helse-bergen.no",
+      "name" : "Lars Bitsch-Larsen",
+      "organisation" : "Haukeland University Hospital, Bergen Norway"
+    },
+    "accreditation" : "MD DEAA MBA spec in anesthesia and intensive care, spec in tropical med.",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : {
+      "name" : "Osmeire Chamelette Sanzovo",
+      "organisation" : "Hospital Sírio Libanês",
+      "email" : "osmeire.acsanzovo@hsl.org.br"
+    },
+    "otherDetails" : { }
+  } ]
+}
