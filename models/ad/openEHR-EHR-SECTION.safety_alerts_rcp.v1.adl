@@ -1,0 +1,53 @@
+archetype (adl_version=1.4; uid=0bbae584-38c0-38d7-8d43-dba683a9ad39)
+	openEHR-EHR-SECTION.safety_alerts_rcp.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2014-06-08">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"Ocean Informatics UK">
+		["email"] = <"ian.mcnicoll@oceaninformatics.com">
+	>
+	lifecycle_state = <"AuthorDraft">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To organise Safety alerts details within a standardised record heading as recommended by the UK Academy of Royal Colleges (AoMRC).
+
+Suggested 'subheading' content includes ...
+
+Risks to self:
+Risks the patient poses to themself eg suicide, overdose, self-harm, self-neglect.
+
+Risks to others:
+Risks to care professional or third party.">
+			copyright = <"© Clinical Models UK">
+		>
+	>
+	other_details = <
+		["references"] = <"Health and Social Care Information Centre, Academy of Medical Royal Colleges (2013) Standards for the Clinical Structure and Content of Patient Records. HSCIC, Leeds.
+Available from: https://www.rcplondon.ac.uk/sites/default/files/standards-for-the-clinical-structure-and-content-of-patient-records.pdf [Accessed July 22, 2014]">
+		["MD5-CAM-1.0.1"] = <"E9950701860B20C9EE6BF64AFD6628B3">
+		["build_uid"] = <"e6b18a27-07ba-3a4b-8a92-24bdf2ad7208">
+	>
+
+definition
+	SECTION[at0000] matches {*}    -- Safety alerts
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Safety alerts">
+					description = <"Safety alerts heading (AoMRC).">
+				>
+			>
+		>
+	>
