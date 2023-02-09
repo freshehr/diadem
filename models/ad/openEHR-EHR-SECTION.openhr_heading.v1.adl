@@ -1,0 +1,68 @@
+archetype (adl_version=1.4; uid=d806292e-e311-33e6-8288-cd430a4745a8)
+	openEHR-EHR-SECTION.openhr_heading.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			author = <
+				["name"] = <"Art Latyp Латыпов Артур Шамилевич">
+				["organisation"] = <"RusBITech РусБИТех, Москва">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"17/03/2010">
+		["name"] = <"Dr Ian McNicoll">
+		["organisation"] = <"Ocean Informatics, United Kingdom">
+		["email"] = <"ian.mcnicoll@oceaninformatics.com">
+	>
+	lifecycle_state = <"AuthorDraft">
+	details = <
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			purpose = <"Базовый заголовок раздела, должен быть переименован в локальном шаблоне ">
+			keywords = <"раздел","шаблон","заготовка","название","образец">
+			copyright = <"© Clinical Models UK">
+			use = <"используется для создания и именования разделов в локальных шаблонах">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"A generic section header which is normally renamed locally at template level.">
+			copyright = <"© Clinical Models UK">
+			use = <"To construct and name a section within a local template.">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"F2F39B817F38FBBFADFBC17540A2B40E">
+		["build_uid"] = <"f39be521-2b64-381c-80c5-ed6a0c9cfbfe">
+	>
+
+definition
+	SECTION[at0000] matches {*}    -- openHR heading
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"openHR heading">
+					description = <"A generic heading used by openHR records.">
+				>
+			>
+		>
+		["ru"] = <
+			items = <
+				["at0000"] = <
+					text = <"заготовка заголовка">
+					description = <"Образец заголовка раздела">
+				>
+			>
+		>
+	>
