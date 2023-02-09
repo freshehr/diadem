@@ -1,0 +1,39 @@
+archetype (adl_version=1.4; uid=2db8283e-a572-3fd0-abe9-3ec95a3879a4)
+	openEHR-EHR-SECTION.clinical_summary_rcp.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"">
+	>
+	lifecycle_state = <"0">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© Clinical Models UK">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"343A6DEEE485E4D8D34053EE3441D6F6">
+		["build_uid"] = <"2748c16e-9fe6-3bde-a832-58a67cae7071">
+	>
+
+definition
+	SECTION[at0000] matches {*}    -- Clinical Summary
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Clinical Summary">
+					description = <"Clnlical summary heading.">
+				>
+			>
+		>
+	>
