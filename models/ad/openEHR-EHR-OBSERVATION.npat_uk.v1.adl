@@ -1,0 +1,295 @@
+archetype (adl_version=1.4; uid=f90123ec-225d-3c65-9148-37a148f22bfb)
+	openEHR-EHR-OBSERVATION.npat_uk.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2015-02-01">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"HANDIHealth,UK">
+		["email"] = <"ian@handihealth.org">
+	>
+	lifecycle_state = <"AuthorDraft">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"A UK-developed scoring tool to assess the level of pain in neonates.">
+			keywords = <"RR","HR","BP","Temp","SBP","triage","NEWS">
+			copyright = <"© Clinical Models UK">
+			use = <"Use only to assess pain in neonates.">
+		>
+	>
+	other_details = <
+		["references"] = <"PAT Pain Assessment Tool, South West Midlands Newborn Network, Available from http://www.networks.nhs.uk/nhs-networks/southern-west-midlands-newborn-network/documents/PAT%20Pain%20Assessment.pdf/view">
+		["current_contact"] = <"Ian McNicoll, HANDIHealth,UK, ian@handihealth.org">
+		["MD5-CAM-1.0.1"] = <"2DB3D2A51419A93832C820B021FC4184">
+		["build_uid"] = <"bd6fa3b2-8941-36a9-9481-cc21c726d0cb">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Neonatal Pain Assessment Tool (UK)
+		data matches {
+			HISTORY[at0001] matches {    -- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {    -- Point in time
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0029] occurrences matches {0..1} matches {    -- Behavioural states
+										value matches {
+											0|[local::at0039],
+											2|[local::at0040]
+										}
+									}
+									ELEMENT[at0030] occurrences matches {0..1} matches {    -- Posture / Tone
+										value matches {
+											0|[local::at0041],
+											1|[local::at0042],
+											2|[local::at0043]
+										}
+									}
+									ELEMENT[at0031] occurrences matches {0..1} matches {    -- Cry
+										value matches {
+											0|[local::at0056],
+											1|[local::at0057],
+											2|[local::at0058]
+										}
+									}
+									ELEMENT[at0032] occurrences matches {0..1} matches {    -- Facial expression
+										value matches {
+											0|[local::at0062],
+											1|[local::at0063],
+											2|[local::at0064]
+										}
+									}
+									ELEMENT[at0033] occurrences matches {0..1} matches {    -- Colour
+										value matches {
+											0|[local::at0059],
+											2|[local::at0060]
+										}
+									}
+									ELEMENT[at0034] occurrences matches {0..1} matches {    -- Respirations
+										value matches {
+											0|[local::at0054],
+											1|[local::at0055],
+											2|[local::at0061]
+										}
+									}
+									ELEMENT[at0035] occurrences matches {0..1} matches {    -- Heart rate
+										value matches {
+											0|[local::at0051],
+											1|[local::at0052],
+											2|[local::at0053]
+										}
+									}
+									ELEMENT[at0036] occurrences matches {0..1} matches {    -- Oxygen saturations
+										value matches {
+											0|[local::at0044],
+											1|[local::at0045],
+											2|[local::at0046]
+										}
+									}
+									ELEMENT[at0037] occurrences matches {0..1} matches {    -- Blood pressure
+										value matches {
+											0|[local::at0047],
+											2|[local::at0048]
+										}
+									}
+									ELEMENT[at0038] occurrences matches {0..1} matches {    -- Outsider perception
+										value matches {
+											0|[local::at0049],
+											2|[local::at0050]
+										}
+									}
+									ELEMENT[at0028] occurrences matches {0..1} matches {    -- Total Score
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..20|}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Neonatal Pain Assessment Tool (UK)">
+					description = <"Uk Neonatal Pain Assessment Tool score.">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Point in time">
+					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0028"] = <
+					text = <"Total Score">
+					description = <"The total score.">
+				>
+				["at0029"] = <
+					text = <"Behavioural states">
+					description = <"Criteria related to behaviour.">
+				>
+				["at0030"] = <
+					text = <"Posture / Tone">
+					description = <"Criteria related to posture and tone.">
+				>
+				["at0031"] = <
+					text = <"Cry">
+					description = <"Criteria related to child crying.">
+				>
+				["at0032"] = <
+					text = <"Facial expression">
+					description = <"Criteria related to facial expression.">
+				>
+				["at0033"] = <
+					text = <"Colour">
+					description = <"Criteria realted ot skin colour.">
+				>
+				["at0034"] = <
+					text = <"Respirations">
+					description = <"Criteria related to respirations.">
+				>
+				["at0035"] = <
+					text = <"Heart rate">
+					description = <"Criteria related to heart rate.">
+				>
+				["at0036"] = <
+					text = <"Oxygen saturations">
+					description = <"Oxygen saturation criteria.">
+				>
+				["at0037"] = <
+					text = <"Blood pressure">
+					description = <"Criteria related to blood pressure.">
+				>
+				["at0038"] = <
+					text = <"Outsider perception">
+					description = <"Criteria related to outsider perception of pain.">
+				>
+				["at0039"] = <
+					text = <"Relaxed">
+					description = <"The child appears relaxed.">
+				>
+				["at0040"] = <
+					text = <"Agitated">
+					description = <"The child appears agitated.">
+				>
+				["at0041"] = <
+					text = <"Relaxed">
+					description = <"The child's posture is relaxed.">
+				>
+				["at0042"] = <
+					text = <"Extended">
+					description = <"The child's posture is extended.">
+				>
+				["at0043"] = <
+					text = <"Flexed/extended or tense">
+					description = <"The child's posture is flexed/ extended or tense.">
+				>
+				["at0044"] = <
+					text = <"Normal for baby">
+					description = <"The child's oxygen sturations are normal.">
+				>
+				["at0045"] = <
+					text = <"Occasional desaturations">
+					description = <"The child has occasional spells of low oxygen saturation.">
+				>
+				["at0046"] = <
+					text = <"Frequent desaturations">
+					description = <"The child has frequent spells of low oxygen saturation.">
+				>
+				["at0047"] = <
+					text = <"Normal">
+					description = <"The child's blood pressure is normal.">
+				>
+				["at0048"] = <
+					text = <"Hypertensive">
+					description = <"The child's blood pressure is high.">
+				>
+				["at0049"] = <
+					text = <"No pain observed">
+					description = <"The child does not appear to be in pain to an outside observer.">
+				>
+				["at0050"] = <
+					text = <"Infant appears to be pain.">
+					description = <"The child does appear to be in pain to an outside observer.">
+				>
+				["at0051"] = <
+					text = <"Heart rate normal for baby">
+					description = <"The child's heart rate is normal.">
+				>
+				["at0052"] = <
+					text = <"Tachycardia at rest">
+					description = <"The child has an abnormally fast heart rate.">
+				>
+				["at0053"] = <
+					text = <"Bradycardias or fixed heart rate">
+					description = <"The child has an abnormally low or fixed heart rate.">
+				>
+				["at0054"] = <
+					text = <"Normal for baby">
+					description = <"The child's respirations appear normal.">
+				>
+				["at0055"] = <
+					text = <"Tachypnoea at rest">
+					description = <"The child has an abnormally fast respiratory rate at rest.">
+				>
+				["at0056"] = <
+					text = <"Not crying or easily consoled">
+					description = <"The child is not crying or is easily consoled.">
+				>
+				["at0057"] = <
+					text = <"Crying and difficult to console">
+					description = <"The child is crying and difficult to console.">
+				>
+				["at0058"] = <
+					text = <"Crying and unconsolable">
+					description = <"The child is crying and unconsolable.">
+				>
+				["at0059"] = <
+					text = <"Centrally pink">
+					description = <"The child's colour is centrally pink.">
+				>
+				["at0060"] = <
+					text = <"Pale, dusky, flushed or mottled">
+					description = <"The child's colour is pale, dusky, flushed or mottled.">
+				>
+				["at0061"] = <
+					text = <"Apnoea at rest or with handling">
+					description = <"The child has an apnoeic episodes at rest or with handling.">
+				>
+				["at0062"] = <
+					text = <"Relaxed">
+					description = <"The child's facial expression is relaxed.">
+				>
+				["at0063"] = <
+					text = <"Frown">
+					description = <"The child is frowning.">
+				>
+				["at0064"] = <
+					text = <"Grimace, Brow bulge, Eyes clenched shut">
+					description = <"The child has a grimace, bulging brow or has their eyes shut.">
+				>
+			>
+		>
+	>
