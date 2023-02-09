@@ -1,0 +1,42 @@
+archetype (adl_version=1.4; uid=1b633eb9-e818-3d24-bb14-e5b5dc21c9a9)
+	openEHR-EHR-SECTION.patient_carer_concerns_rcp.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2014-06-08">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics">
+		["email"] = <"ian@freshehr.com">
+	>
+	lifecycle_state = <"AuthorDraft">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© Clinical Models UK">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"856EABE89481D91BE7859C682F530992">
+		["build_uid"] = <"144aba70-ea3e-3fa7-af62-84c1b0f84bb0">
+	>
+
+definition
+	SECTION[at0000] matches {*}    -- Patient  and Carer Concerns
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Patient  and Carer Concerns">
+					description = <"unknown">
+				>
+			>
+		>
+	>
