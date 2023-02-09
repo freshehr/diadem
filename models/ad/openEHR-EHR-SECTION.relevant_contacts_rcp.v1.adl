@@ -1,0 +1,42 @@
+archetype (adl_version=1.4; uid=6bd00c33-7b42-319d-9648-19b8301586a2)
+	openEHR-EHR-SECTION.relevant_contacts_rcp.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2014-06-09">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics">
+		["email"] = <"ian@freshehr.com">
+	>
+	lifecycle_state = <"AuthorDraft">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© Clinical Models UK">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"920E65186ACB4BE15F98CD2BE28649A1">
+		["build_uid"] = <"87edfb21-d97a-3e3a-a84f-65a5a22242bf">
+	>
+
+definition
+	SECTION[at0000] matches {*}    -- Relevant contacts
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Relevant contacts">
+					description = <"Relevant contacts heading.">
+				>
+			>
+		>
+	>
